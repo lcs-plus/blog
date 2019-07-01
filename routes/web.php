@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::namespace('Admin')->group(function () {
+
+    Route::get('/','AdminController@index');
+
 });
