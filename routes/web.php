@@ -13,6 +13,8 @@
 
 Route::namespace('Admin')->group(function () {
 
-    Route::get('/','AdminController@index');
+    Route::get('/', 'AdminController@index');
+
+    Route::get('/admin/login/login', 'LoginController@login');
 
 });
